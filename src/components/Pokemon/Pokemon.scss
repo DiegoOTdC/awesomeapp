@@ -1,0 +1,16 @@
+.Pokemon {
+  transition: transform 0.2s ease;
+}
+.Pokemon:hover {
+  transform: scale(1.02) translate(0, -3px);
+  animation: Pokemon-Card-Spin 1 0.5s linear;
+}
+
+@keyframes Pokemon-Card-Spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
